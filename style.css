@@ -73,51 +73,21 @@ html::-webkit-scrollbar-thumb{
     color: var(--main-color);
     display: none;
 }
-/* Hide the menu icon on large screens */
+
 .menu-icon {
     display: none;
 }
 
-/* Hide the checkbox (menu toggle) */
+
 .menu-toggle {
     display: none;
 }
 
-/*@media(max-width:995px){
-    #menu-icon{
-        display: block;
-    }
-    .navbar{
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid var(--main-color);
-        border-bottom: 3px solid var(--main-color);
-        border-bottom-left-radius: 2rem;
-        padding: 1rem 3%;
-        background-color: var(--second-bg-color);
-        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-        display: none;
-    }
-    .navbar.active{
-        display: block;
-    }
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-    .navbar a:hover,
-    .navbar a.active{
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid var(--main-color);
-    }
-}*/
 @media(max-width:995px) {
-
-    /* Display the menu icon for smaller screens */
+#menu-icon {
+        display: block; 
+    }
+    
     .menu-icon {
         font-size: 3.6rem;
         color: var(--main-color);
@@ -125,7 +95,7 @@ html::-webkit-scrollbar-thumb{
         cursor: pointer;
     }
 
-    /* Navbar hidden by default */
+   
     .navbar {
         position: absolute;
         top: 100%;
@@ -139,7 +109,6 @@ html::-webkit-scrollbar-thumb{
         display: none;
     }
 
-    /* Show navbar when checkbox is checked */
     .menu-toggle:checked + .menu-icon + .navbar {
         display: block;
     }
